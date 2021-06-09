@@ -69,10 +69,6 @@
 // drawTriangle(4);
 
 const drawTriangle = (n) => {
-  if (n % 2 === 1) {
-    console.log("object");
-  }
-
   for (let x = 1; x <= n; x++) {
     let draw = "";
     let X = "X ";
@@ -111,9 +107,9 @@ const drawTriangle = (n) => {
       }
     }
 
-    // if (x !== 2 && x !== 8) {
-    console.log(draw);
-    // }
+    if (x !== 2 && x !== 8) {
+      console.log(draw);
+    }
   }
 };
 
