@@ -69,18 +69,14 @@
 // drawTriangle(4);
 
 const drawTriangle = (n) => {
+  if (n % 2 === 1) {
+    console.log("object");
+  }
+
   for (let x = 1; x <= n; x++) {
     let draw = "";
     let X = "X ";
     let space = "  ";
-
-    // for (let y = 1; y <= n; y++) {
-    //   if (y - x > n - 2 * x) {
-    //     draw = draw + X;
-    //   } else {
-    //     draw = draw + space;
-    //   }
-    // }
 
     // ปีกซ้าย
     for (let y = 1; y < n; y++) {
